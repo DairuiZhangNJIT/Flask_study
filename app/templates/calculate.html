@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Calculator for addition</h1>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+  <form method=post>
+    <dl>
+      <dt>The first number:
+      <dd><input type=number name=firstNum value="{{
+          request.form.firstNum }}">
+      <dt>The second number:
+      <dd><input type=number name=secondNum value="{{
+          request.form.secondNum }}">
+      <dt>Operation:
+      <dd><label for="addition">Add</label>
+          <input type="radio" name="operation" id="addition" value="addition"/>
+          <br />
+          <label for="subtract">Subtract</label>
+          <input type="radio" name="operation" id="subtract" value="subtraction"/>
+          <br />
+          <label for="multiplication">multiplication</label>
+          <input type="radio" name="operation" id="multiplication" value="multiplication"/>
+          <br />
+          <label for="division">Divition</label>
+          <input type="radio" name="operation" id="division" value="division"/>
+    </dl>
+    <input type=submit value="SUBMIT">
+  </form>
+<a href="/history">Check history</a>
+{% endblock %}
