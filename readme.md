@@ -1,10 +1,14 @@
-# Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/kaw393939/calc2.svg?branch=main)](https://app.travis-ci.com/kaw393939/calc2)
+# Project 3
 
-To run tests, Lint, and Coverage report use this command:
+Dairui Zhang
 
-pytest  --pylint --cov
+DEMO : https://youtu.be/F2TUNk8m7kI
 
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
+
+Instead of everytime show calculation result in a result page, I used Flash to show result.
+And to see history, just click history button to see the calculation history.
+This is by reading CSV file.
+
+I plan to beautiful my calculator in the future. During final, I feel really tired and didn't have time to beauty my webpage so only made the basic requairment.
+But the table(history) page has been prettified using Bootstrap.
+
